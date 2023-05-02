@@ -10,6 +10,6 @@ typedef char uint8;
 // where n = #Terminals and m=|V(G)|.
 int sizeofNodes(int n, int m);
 
-int Algorithm(uint8 n, Graph G, int *T, uint8 t, Graph *mst);
+int Algorithm(uint8 n, Graph G, int *T, uint8 t, Graph *mst, bool counter);
 
 #endif

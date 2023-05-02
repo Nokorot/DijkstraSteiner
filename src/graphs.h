@@ -6,7 +6,6 @@
 typedef struct Point {
     int x, y;
     // struct Edge *delta; // Adjestent edges
-    
     struct Point *neigbours[MAX_NEIGBOUR_COUNT];
 } Point;
 

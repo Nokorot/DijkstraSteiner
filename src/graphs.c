@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include <string.h>
 
@@ -29,7 +28,6 @@ Graph constrct_hanan_grid(int *xn, int *yn, int *xs, int *ys) {
     Point *V = malloc(sizeof(Point)*m);
     memset(V, 0, sizeof(Point)*m);
 
-    int k;
     Point *p;
     for (int i=0; i<*xn; ++i)
         for (int j=0; j<*yn; ++j) {
@@ -41,5 +39,5 @@ Graph constrct_hanan_grid(int *xn, int *yn, int *xs, int *ys) {
             if (j < *yn-1)  p->neigbours[3] = V + i     + (*xn)*(j+1);
         }
 
-    return (Graph) { V: V, size : m};
+    return (Graph) { V, m };
 }

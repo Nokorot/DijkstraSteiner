@@ -1,0 +1,16 @@
+Summary
+-------
+This is my implementatin of the Dijkstra Steiner Algorithm for 2D rectilinear instances.
+
+Compilation
+-------
+There is a bash build script. 
+```
+./build.sh release
+```
+
+Usage
+-------
+```
+./dijkstra-steiner [-hgv] <instance_file>
+```
